@@ -1,1 +1,32 @@
 // Navigation Styles here
+
+.navigation {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    border-bottom: 2px dashed @navigation-border;
+
+    h1 {
+        .trueCenter(center, center)
+    }//end navigation h1
+    nav {
+       width: 80%;
+       display: flex;
+       flex-direction: row;
+       justify-content: flex-end;
+       
+
+       a {
+           flex-direction: flex-end;
+           margin: 2%;
+           font-size: 2em;
+           text-decoration: none;
+           color: black;
+
+           &:hover {
+               color: @eastern-blue;
+
+           }//end of nav a hover           
+       }//end of nav a
+    }//end of nav
+} //end of navigation
