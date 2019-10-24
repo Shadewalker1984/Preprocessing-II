@@ -1,7 +1,10 @@
 // Mixins in here
+@mobile: ~"(max-width: 500px)";
+@desktop: ~"(max-width: 800px)";
 
-.trueCenter(@jc, @ac) {
+
+.trueCenter(@jc, @ai) {
     display: flex;
     justify-content: @jc;
-    align-items: @ac;
+    align-items: @ai;
 }
