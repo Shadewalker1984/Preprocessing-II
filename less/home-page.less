@@ -1,6 +1,4 @@
-
-
-    
+   
 .welcome-section {
   margin: 30px 0;
   display: flex;
@@ -23,9 +21,8 @@
       padding: 0;
       margin: 2%;
       text-align: center;
-  }
-
-  }
+    }//end of mobile
+   }//end of h1
   p {
     width: 60%;
     border-bottom: 2px dashed @navigation-border;
@@ -33,15 +30,13 @@
     @media @mobile {
       width: 100%;
       padding: 2%;
-  }//end mobile
+    }//end mobile
 
-  @media @tablet {
-    width: 100%;
-    padding: 3%;
-  }//end of tablet
-  }//end of welcome-section h1
-
-
+    @media @tablet {
+      width: 100%;
+      padding: 3%;
+    }//end of tablet
+  }//end of welcome-section p
 }//end of welcome-section;
 
 
@@ -55,10 +50,8 @@
 
     @media @mobile {
       flex-direction: column;
-    }
+    }//end of mobile
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -68,8 +61,7 @@
         margin: 2%;
         padding: 2%;
       }//end mobile
-
-    }
+    }//end of text-content
 
     .img-content {
       width: 48%;
@@ -79,14 +71,14 @@
         width: 100%;
         margin: 2%;
         padding: 2%;
-  
-     }//end media
+     }//end mobile
 
       img {
         border-radius: 10px;
+
         @media @mobile {
           width: 98%;
-        }
+        }//end of mobile
       }//end image
     }//end image content
   }//end content-section
@@ -99,24 +91,26 @@
       width: 100%;
       display: flex;
       flex-direction: column-reverse;
-   }//end media
+   }//end of mobile
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-    }
+    }//end of text-content
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
 
       .img-fluid {
-         @media @mobile {
+
+        @media @mobile {
           width: 98%;
         }//end media
+
      }//end of img-fluid
-    }
-  }
+    }//rnf og img-content
+  }//end of inverse-content
 
   .content-destination {
     width: 75%;
@@ -125,17 +119,17 @@
     @media @mobile {
       width: 100%;
       margin: 2%
-    }//end media
+    }//end mobile
 
     img {
       border-radius: 10px;
 
       @media @mobile {
         width: 98%;
-      }//end media
+      }//end mobile
 
-    }
-  }
+    }//end of img
+  }//end of content-destination
 
   .content-pick {
     padding-top: 30px;
@@ -148,17 +142,13 @@
       .trueCenter(center, center);
       width: 100%;
       padding: 10%;
-
      }//end mobile
 
     @media @tablet {
     flex-direction: column;
      width: 100%;
      margin: 3%; 
-     }
-
- 
-     
+    }//end of tablet
 
 
     .destination {
@@ -169,26 +159,26 @@
 
       @media @mobile {
         width: 100%;
-      }//end media
+      }//end mobile
 
       @media @tablet {
         width: 100%;
         padding: 3%;
-      }
+      }//end of tablet
 
       h4 {
         @media @mobile {
           width: 98%;
           margin: 1%;
-        }//end media
-      }
+        }//end mobile
+      }//end of h1
 
       p {
         @media @mobile {
           width: 98%;
           margin: 2%;
         }//end media
-      }
+      }//end of p
 
       .btn {
         justify-content: flex-start;
@@ -197,17 +187,18 @@
         @media @mobile {
           width: 98%;
           margin: 2%;
-        }//end media
+        }//end mobile
+
         @media @tablet {
           width: 50%;
-        }
+        }//end of tablet
       }//end of button
-    }
-  }
+    }//end of destination
+  }//end of content-pick
 
   @media @tablet {
    width: 100%;
    padding: 3%; 
-  }
+  }//end of tablet
 }// home
 
