@@ -269,6 +269,28 @@ img {
   justify-content: space-between;
 }
 .home .content-pick .destination {
+  display: flex;
+  flex-direction: column;
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  justify-content: flex-start;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #17A2B8;
+  border: 1px solid black;
+  border-radius: 15px;
+  font-size: 2em;
+  padding: 4%;
+  margin: 0 auto;
+  text-align: center;
+}
+.home .content-pick .destination .btn a {
+  text-decoration: none;
+  color: #C0C0C0;
+}
+.home .content-pick .destination .btn a:hover {
+  color: #212529;
 }
