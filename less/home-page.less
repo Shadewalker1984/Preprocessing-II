@@ -33,8 +33,15 @@
     @media @mobile {
       width: 100%;
       padding: 2%;
-  }
+  }//end mobile
+
+  @media @tablet {
+    width: 100%;
+    padding: 3%;
+  }//end of tablet
   }//end of welcome-section h1
+
+
 }//end of welcome-section;
 
 
@@ -142,7 +149,17 @@
       width: 100%;
       padding: 10%;
 
-  }
+     }//end mobile
+
+    @media @tablet {
+    flex-direction: column;
+     width: 100%;
+     margin: 3%; 
+     }
+
+ 
+     
+
 
     .destination {
       display: flex;
@@ -153,6 +170,11 @@
       @media @mobile {
         width: 100%;
       }//end media
+
+      @media @tablet {
+        width: 100%;
+        padding: 3%;
+      }
 
       h4 {
         @media @mobile {
@@ -176,8 +198,16 @@
           width: 98%;
           margin: 2%;
         }//end media
+        @media @tablet {
+          width: 50%;
+        }
       }//end of button
     }
+  }
+
+  @media @tablet {
+   width: 100%;
+   padding: 3%; 
   }
 }// home
 

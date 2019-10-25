@@ -10,9 +10,9 @@
 
     .funBus {
         @media @mobile {
-
             justify-content: center;
-        }
+        }//end mobile
+
     }
     h1 {
         .trueCenter(center, center)
@@ -48,12 +48,24 @@
        @media @mobile {
         width: 100%;
         .trueCenter(center, center);
+     }//end mobile
 
-    }
+     @media @tablet {
+        width: 100%;
+        flex-direction: column;
+        .trueCenter(center, center);
+    }//end tablet
+
     }//end of nav
 
     @media @mobile {
         flex-direction: column;
         justify-content: flex-start;
+    }
+
+    @media @tablet {
+        flex-direction: column;
+        border: none;
+
     }
 } //end of navigation
