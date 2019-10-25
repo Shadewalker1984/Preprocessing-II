@@ -1,14 +1,22 @@
 // Navigation Styles here
 
+
+
 .navigation {
     width: 100%;
     display: flex;
     margin: 0 auto;
     border-bottom: 2px dashed @navigation-border;
 
+    .funBus {
+        @media @mobile {
+
+            justify-content: center;
+        }
+    }
     h1 {
         .trueCenter(center, center)
-        
+    
     }//end navigation h1
 
 
@@ -29,7 +37,24 @@
            &:hover {
                color: @eastern-blue;
 
-           }//end of nav a hover           
+
+           }//end of nav a hover
+           @media @mobile {
+            margin: 20px;
+            justify-content: center;
+        }
+           
        }//end of nav a
+       @media @mobile {
+        width: 100%;
+        flex-direction: column;
+        .trueCenter(center, center);
+
+    }
     }//end of nav
+
+    @media @mobile {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 } //end of navigation
