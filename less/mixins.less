@@ -1,1 +1,33 @@
 // Mixins in here
+@mobile: ~"(max-width: 500px)";
+@tablet: ~"(max-width: 768px)";
+
+
+.trueCenter(@jc, @ai) {
+    display: flex;
+    justify-content: @jc;
+    align-items: @ai;
+}
+
+.button(@foreColor, @backColor) {
+    display: flex;  
+    justify-content: center;
+    width: 100%;
+    background-color: @backColor;
+    border-radius: 15px;
+    font-size: 2em;
+    padding: 4%;
+    margin: 0 auto;
+    text-align: center;
+    
+    a {
+        text-decoration: none;
+        color: @foreColor;
+
+        &:hover {
+            color: @shark;
+        }
+    }
+
+
+}

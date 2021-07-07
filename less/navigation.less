@@ -1,1 +1,72 @@
 // Navigation Styles here
+
+
+
+.navigation {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    border-bottom: 2px dashed @navigation-border;
+
+    .funBus {
+        @media @mobile {
+            justify-content: center;
+        }//end mobile
+
+    }
+    h1 {
+        .trueCenter(center, center);
+        margin: .5em;
+    
+    }//end navigation h1
+
+
+    nav {
+       width: 80%;
+       display: flex;
+       flex-direction: row;
+       justify-content: flex-end;
+       
+
+       a {
+           flex-direction: flex-end;
+           margin: 2%;
+           font-size: 2em;
+           text-decoration: none;
+           color: black;
+
+           &:hover {
+               color: @eastern-blue;
+
+
+           }//end of nav a hover
+           @media @mobile {
+            margin: 20px;
+            justify-content: center;
+        }
+           
+       }//end of nav a
+       @media @mobile {
+        width: 100%;
+        .trueCenter(center, center);
+     }//end mobile
+
+     @media @tablet {
+        width: 100%;
+        flex-direction: column;
+        .trueCenter(center, center);
+    }//end tablet
+
+    }//end of nav
+
+    @media @mobile {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    @media @tablet {
+        flex-direction: column;
+        border: none;
+
+    }
+} //end of navigation
